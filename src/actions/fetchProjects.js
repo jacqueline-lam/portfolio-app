@@ -7,7 +7,7 @@ export const fetchProjects = () => {
   return (dispatch) => {
     // action dispatched before sending a remote request to API
     dispatch({ type: 'LOADING_PROJECTS' });
-    fetch('http://jlam-portfolio-backend.herokuapp.com/api/v1/projects')
+    fetch('https://jlam-portfolio-backend.herokuapp.com/api/v1/projects')
       // we won't do anything with this data until we get resp back
       // fetch returns Promise - data becomes available when promise resolves
       // .then() method to run once our Promise has been fulfilled - parse response data into JSON
