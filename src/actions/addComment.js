@@ -2,7 +2,7 @@ export const addComment = comment => {
   // Thunk allows fn to take dispatch fn as an argument
   // gives us access to dispatch fn
   return (dispatch) => {
-    fetch(`http://localhost:3000/api/v1/projects/${comment.project_id}/comments`, {
+    fetch(`http://jlam-portfolio-backend.herokuapp.com//api/v1/projects/${comment.project_id}/comments`, {
       headers: {
         // data content sent to backend will be json
         'Content-Type': 'application/json',
