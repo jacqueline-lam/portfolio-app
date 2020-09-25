@@ -12,7 +12,7 @@ const NavBar = () => {
             <li className='nav-item'>
               <NavLink
                 className='nav-link'
-                to="/portfolio-app/"
+                to="/"
                 exact
                 activeStyle={{
                   color: '#bda38f'
@@ -22,7 +22,7 @@ const NavBar = () => {
             <li className='nav-item'>
               <NavLink
                 className='nav-link'
-                to="/portfolio-app/about"
+                to="/about"
                 exact
                 activeStyle={{
                   color: '#bda38f'
@@ -32,7 +32,7 @@ const NavBar = () => {
             <li className='nav-item'>
               <NavLink
                 className='nav-link'
-                to="/portfolio-app/projects"
+                to="/projects"
                 exact
                 activeStyle={{
                   color: '#bda38f'
@@ -42,7 +42,7 @@ const NavBar = () => {
             <li className='nav-item'>
               <NavLink
                 className='nav-link'
-                to="/portfolio-app/blog"
+                to="/blog"
                 exact
                 activeStyle={{
                   color: '#bda38f'
