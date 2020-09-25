@@ -16,7 +16,7 @@ class App extends Component {
         <NavBar />
         <Contact />
         {/* When URL matches specified path, render component */}
-        <Route exact path='/portfolio-app' component={Home} />
+        <Route exact path='/portfolio-app/' component={Home} />
         <Route path='/portfolio-app/about' component={About} />
         <Route path='/portfolio-app/blog' component={BlogPostsContainer} />
         <ProjectsContainer />
