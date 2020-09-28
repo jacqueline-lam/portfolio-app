@@ -60,7 +60,8 @@ const ProjectDetails = ({ match, projects }) => {
 
   return (
     < >
-      {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>}
+      <h1>{match.params}</h1>
+      {/* {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>} */}
     </>
   )
 }

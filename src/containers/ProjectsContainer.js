@@ -25,8 +25,8 @@ class ProjectsContainer extends Component {
             <img src={Loading} alt='loading' />
             :
             < >
-              {/* <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={filteredProjects} />} /> */}
-              <Route path='/projects/:projectId' render={() => <h1>Hello World</h1>} />
+              <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={filteredProjects} />} />
+              {/* <Route path='/projects/6' render={() => <h1>Hello World</h1>} /> */}
               <Route exact path='/projects' render={() =>
                 <div id='portfolio'>
                   <h1>PORTFOLIO</h1>
