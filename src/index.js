@@ -5,7 +5,7 @@ import './index.css';
 // Any component wrapped in Provider will have access to redux store
 import { Provider } from 'react-redux';
 // React-router to link to specific URLs then show/hide various components
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 // Compose combine diff middlewares into 1 - to pass in all middleware as 1 argument in createStore
 import { createStore, applyMiddleware, compose } from 'redux';
 // Thunk to incorporate async code with out Redux actions
