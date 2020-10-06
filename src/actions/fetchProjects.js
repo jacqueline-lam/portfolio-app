@@ -17,3 +17,4 @@ export const fetchProjects = () => {
       .then(respJSON => dispatch({ type: 'ADD_PROJECTS', projects: respJSON }));
   }
 }
+//

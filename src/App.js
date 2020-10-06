@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import {
+  Route,
+  Switch
+} from 'react-router-dom';
 import 'bootswatch/dist/litera/bootstrap.min.css';
 import './App.css';
 import NavBar from './components/NavBar'
@@ -15,11 +18,14 @@ class App extends Component {
       <div className='App' id='page-top' >
         <NavBar />
         <Contact />
-        {/* When URL matches specified path, render component */}
-        <Route exact path='/' component={Home} />
-        <Route path='/about' component={About} />
-        <Route path='/blog' component={BlogPostsContainer} />
-        <ProjectsContainer />
+        <Switch>
+          {/* only first child <Route> that matches the location gets rendered */}
+          {/* When URL matches specified path, render component */}
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/projects' component={ProjectsContainer} />
+          <Route path='/blog' component={BlogPostsContainer} />
+        </Switch>
       </div>
     );
   }

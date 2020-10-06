@@ -2,10 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import {
   Route,
-  Switch,
-  Link,
-  useParams,
-  useRouteMatch
+  Link
 } from 'react-router-dom';
 import ProjectFilters from '../components/projects/ProjectFilters'
 import ProjectList from '../components/projects/ProjectList'
@@ -22,25 +19,37 @@ class ProjectsContainer extends Component {
   }
 
   render() {
-    const { filteredProjects, stacks, selectedStackIds, loading, addFilter, removeFilter } = this.props
+    const { filteredProjects, stacks, selectedStackIds, loading, addFilter, removeFilter, match } = this.props
     return (
       <div id='projects-container' className='component'>
         {
           loading ?
             <img src={Loading} alt='loading' />
             :
-            < >
-              <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={filteredProjects} />} />
-              {/* <Route path='/projects/6' render={() => <h1>Hello World</h1>} /> */}
-              <Route exact path='/projects' render={() =>
-                <div id='portfolio'>
-                  <h1>PORTFOLIO</h1>
-                  <h3>My Latest Projects</h3>
-                  <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
-                  <ProjectList filteredProjects={filteredProjects} />
-                </div>
-              } />
-            </ >
+            <div id='portfolio'>
+              <h1>PORTFOLIO</h1>
+              <h3>My Latest Projects</h3>
+              <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
+              <ProjectList filteredProjects={filteredProjects} />
+              <Route
+                path={`${match.url}/:projectId`}
+                render={match => <ProjectDetails {...match} projects={filteredProjects} />}
+
+              />
+
+              {/* <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={filteredProjects} />} /> */}
+            </div>
+          // < >
+          //   <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={filteredProjects} />} />
+          //   <Route exact path='/projects' render={() =>
+          //     <div id='portfolio'>
+          //       <h1>PORTFOLIO</h1>
+          //       <h3>My Latest Projects</h3>
+          //       <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
+          //       <ProjectList filteredProjects={filteredProjects} />
+          //     </div>
+          //   } />
+          // </ >
         }
       </div >
     )
