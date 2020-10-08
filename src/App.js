@@ -23,6 +23,7 @@ class App extends Component {
           {/* When URL matches specified path, render component */}
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
+          <Route path='/projects/:projectId' component={Project} />
           <Route path='/projects' component={ProjectsContainer} />
           <Route path='/blog' component={BlogPostsContainer} />
         </Switch>

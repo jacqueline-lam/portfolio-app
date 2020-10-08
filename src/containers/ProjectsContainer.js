@@ -19,39 +19,25 @@ class ProjectsContainer extends Component {
   }
 
   render() {
-    const { filteredProjects, stacks, selectedStackIds, loading, addFilter, removeFilter, match } = this.props
+    const { filteredProjects, stacks, selectedStackIds, loading, addFilter, removeFilter } = this.props
     return (
       <div id='projects-container' className='component'>
-        {
-          loading ?
-            <img src={Loading} alt='loading' />
-            :
-            <div id='portfolio'>
-              <h1>PORTFOLIO</h1>
-              <h3>My Latest Projects</h3>
-              <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
-              <ProjectList filteredProjects={filteredProjects} />
-              <Route
-                path={`${match.url}/:projectId`}
-                render={match => <ProjectDetails {...match} projects={filteredProjects} />}
-
-              />
-
-              {/* <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={filteredProjects} />} /> */}
-            </div>
-          // < >
-          //   <Route path='/projects/:projectId' render={routerProps => <ProjectDetails {...routerProps} projects={filteredProjects} />} />
-          //   <Route exact path='/projects' render={() =>
-          //     <div id='portfolio'>
-          //       <h1>PORTFOLIO</h1>
-          //       <h3>My Latest Projects</h3>
-          //       <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
-          //       <ProjectList filteredProjects={filteredProjects} />
-          //     </div>
-          //   } />
-          // </ >
-        }
-      </div >
+        <Switch>
+          <Route path="/projects/:projectId" render={match => <ProjectDetails {...match} projects={filteredProjects} />} />
+          <Route exact path='/projects' render={() => {
+            loading ?
+              <img src={Loading} alt='loading' />
+              :
+              <div id='portfolio'>
+                <h1>PORTFOLIO</h1>
+                <h3>My Latest Projects</h3>
+                <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
+                <ProjectList filteredProjects={filteredProjects} />
+              </div>
+          }
+          } />
+        </Switch>
+      </div>
     )
   }
 }
