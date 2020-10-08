@@ -24,7 +24,7 @@ class ProjectsContainer extends Component {
       <div id='projects-container' className='component'>
         <Switch>
           <Route path="/projects/:projectId" render={match => <ProjectDetails {...match} projects={filteredProjects} />} />
-          <Route exact path='/projects' render={() =>
+          <Route path='/projects' render={() =>
             <>
               {
                 loading ?
