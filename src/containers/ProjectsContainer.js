@@ -24,17 +24,20 @@ class ProjectsContainer extends Component {
       <div id='projects-container' className='component'>
         <Switch>
           <Route path="/projects/:projectId" render={match => <ProjectDetails {...match} projects={filteredProjects} />} />
-          <Route exact path='/projects' render={() => {
-            loading ?
-              <img src={Loading} alt='loading' />
-              :
-              <div id='portfolio'>
-                <h1>PORTFOLIO</h1>
-                <h3>My Latest Projects</h3>
-                <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
-                <ProjectList filteredProjects={filteredProjects} />
-              </div>
-          }
+          <Route exact path='/projects' render={() =>
+            <>
+              {
+                loading ?
+                  <img src={Loading} alt='loading' />
+                  :
+                  <div id='portfolio'>
+                    <h1>PORTFOLIO</h1>
+                    <h3>My Latest Projects</h3>
+                    <ProjectFilters stacks={stacks} selectedStackIds={selectedStackIds} addFilter={addFilter} removeFilter={removeFilter} />
+                    <ProjectList filteredProjects={filteredProjects} />
+                  </div>
+              }
+            </>
           } />
         </Switch>
       </div>

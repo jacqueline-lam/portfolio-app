@@ -41,6 +41,7 @@ const ProjectDetails = ({ match, projects }) => {
             <h6>Features</h6>
             <Markup content={project.features} allowElements='true' />
           </div>
+
           {project.blog_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.blog_url, "_blank")}>BLOG POST</button> : null}
           {project.github_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.github_url, "_blank")}>SOURCE CODE</button> : null}
           {project.demo_vid ?
@@ -52,6 +53,7 @@ const ProjectDetails = ({ match, projects }) => {
             null
           }
           <hr />
+
           <CommentsContainer project={project} />
         </div>
       </Container>
@@ -60,11 +62,6 @@ const ProjectDetails = ({ match, projects }) => {
 
   return (
     < >
-      {/* <h1>{match}</h1>
-      <h1>{match.params}</h1>
-      <p>{match.params.projectId}</p>
-      <p>{projects}</p> */}
-      {console.log(match)}
       {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>}
     </>
   )
