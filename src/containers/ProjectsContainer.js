@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import {
   Route,
-  Link
+  Switch
 } from 'react-router-dom';
 import ProjectFilters from '../components/projects/ProjectFilters'
 import ProjectList from '../components/projects/ProjectList'
