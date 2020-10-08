@@ -21,10 +21,10 @@ class App extends Component {
         <Switch>
           {/* only first child <Route> that matches the location gets rendered */}
           {/* When URL matches specified path, render component */}
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
           <Route path='/projects' component={ProjectsContainer} />
           <Route path='/blog' component={BlogPostsContainer} />
+          <Route path='/about' component={About} />
+          <Route path='/' component={Home} />
         </Switch>
       </div>
     );
