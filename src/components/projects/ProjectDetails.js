@@ -24,7 +24,7 @@ const ProjectDetails = ({ match, projects }) => {
     // return multiple JSX elements in an array
     return [
       <Container>
-        <Link to={'/projects'}>
+        {/* <Link to={'/projects'}>
           <button className='btn btn-outline-secondary'>&laquo; BACK</button>
         </Link>
 
@@ -55,14 +55,16 @@ const ProjectDetails = ({ match, projects }) => {
           <hr />
 
           <CommentsContainer project={project} />
-        </div>
+        </div> */}
       </Container>
     ]
   }
 
   return (
     < >
-      {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>}
+      {console.log(match)}
+      {console.log(project)}
+      {/* {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>} */}
     </>
   )
 }
