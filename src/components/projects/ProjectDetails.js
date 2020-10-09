@@ -24,11 +24,12 @@ const ProjectDetails = ({ match, projects }) => {
     // return multiple JSX elements in an array
     return [
       <Container>
-        {/* <Link to={'/projects'}>
+        <h2>Test</h2>
+        <Link to={'/projects'}>
           <button className='btn btn-outline-secondary'>&laquo; BACK</button>
         </Link>
 
-        <div className='component'>
+        {/* <div className='component'>
           <h3>{project.name}</h3>
           <img className='project-thumbnail' alt='project thumbnail' src={img} />
           <h5>Stacks</h5>
@@ -64,7 +65,7 @@ const ProjectDetails = ({ match, projects }) => {
     < >
       {console.log(match)}
       {console.log(project)}
-      {/* {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>} */}
+      {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>}
     </>
   )
 }
