@@ -8,10 +8,11 @@ class CommentsContainer extends Component {
   render() {
     return (
       <div id='comments-container'>
-        <CommentInput
+        <h5>Comments</h5>
+        {/* <CommentInput
           addComment={this.props.addComment}
           projectId={this.props.project.id}
-        />
+        /> */}
         {this.props.project.comments.length > 0 ?
           <Comments
             projectComments={this.props.project.comments}

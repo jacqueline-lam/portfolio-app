@@ -18,6 +18,7 @@ const ProjectCard = ({ project }) => {
       <img className='project-thumbnail' alt='project thumbnail' src={img} />
       <i>{projectStacks}</i>
       <hr />
+      {console.log(`deployed ProjectCard: ${img}`)}
     </div >
   );
 };
