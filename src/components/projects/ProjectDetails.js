@@ -30,7 +30,7 @@ const ProjectDetails = ({ match, projects }) => {
 
         <div className='component'>
           <h3>{project.name}</h3>
-          <img className='project-thumbnail' alt='project thumbnail' src={img} />
+          <img className='project-thumbnail img-fluid' alt='project thumbnail' src={img} />
           <h5>Stacks</h5>
           {projectStacks}
           <div className='text' id='project-text'>
