@@ -47,7 +47,7 @@ const ProjectDetails = ({ match, projects }) => {
           {project.demo_vid ?
             <div>
               <h5>Project Demo</h5>
-              <iframe title="Umami Pantry Demo" width="560" height="315" src={project.demo_vid} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe title="Umami Pantry Demo" width="100%" height="auto" src={project.demo_vid} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
             :
             null
