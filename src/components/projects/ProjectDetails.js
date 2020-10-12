@@ -30,7 +30,11 @@ const ProjectDetails = ({ match, projects }) => {
 
         <div className='component'>
           <h3>{project.name}</h3>
-          <img className='project-thumbnail img-fluid' alt='project thumbnail' src={img} />
+          <img
+            className='project-thumbnail img-fluid'
+            alt='project thumbnail'
+            src={img}
+          />
           <h5>Stacks</h5>
           {projectStacks}
           <div className='text' id='project-text'>
@@ -47,7 +51,15 @@ const ProjectDetails = ({ match, projects }) => {
           {project.demo_vid ?
             <div>
               <h5>Project Demo</h5>
-              <iframe title="Umami Pantry Demo" width="100%" height="auto" src={project.demo_vid} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <div className='iframe-container'>
+                <iframe
+                  title="Umami Pantry Demo"
+                  src={project.demo_vid}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
             :
             null
