@@ -6,17 +6,6 @@ class HomeAnimation extends Component {
   render() {
     return (
       <>
-        <div className="title-block">
-          <h1 className="title"> JACQUELINE LAM </h1>
-          <h3 className="title">Full-stack Software Engineer</h3>
-          {/* for future use:
-            <div class="button-container title">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-          </div> */}
-
-        </div>
         {/*?xml version="1.0" encoding="utf-8"?*/}
         {/* Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  */}
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2450.7 1343.9" style={{ enableBackground: 'new 0 0 2450.7 1343.9' }} xmlSpace="preserve">
