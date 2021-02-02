@@ -1,9 +1,9 @@
 export const fetchBlogPosts = () => {
   return (dispatch) => {
     dispatch({ type: 'LOADING_BLOG' });
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    const url = 'http://dev.to/api/articles?username=jacquelinelam'
-    fetch(proxyurl + url)
+    // const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const url = 'https://dev.to/api/articles?username=jacquelinelam'
+    fetch(url)
       // execute asynchronous code, once resolved, we can use dispatch to update our store
       // .then() fn to parse JSON of response to this request
       .then(resp => resp.json())

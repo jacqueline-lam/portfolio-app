@@ -8,7 +8,6 @@ const Comments = ({ projectComments }) => {
 
   return (
     <div className='comments'>
-      <h4>Comments</h4>
       {renderComments}
     </div>
   );
