@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
       <div className="container">
-        <a className="navbar-brand" href="/">Jacqueline Lam</a>
+        <a className="navbar-brand" href="/portfolio-app/#/">Jacqueline Lam</a>
         <div className="justify-content-end" id="navbarDefault" >
           <ul className="navbar-nav">
             <li className='nav-item'>
