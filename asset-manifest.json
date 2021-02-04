@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.b6c042be.chunk.css",
-    "main.js": "/portfolio-app/static/js/main.ca53d5c6.chunk.js",
-    "main.js.map": "/portfolio-app/static/js/main.ca53d5c6.chunk.js.map",
+    "main.css": "/portfolio-app/static/css/main.570c5eb1.chunk.css",
+    "main.js": "/portfolio-app/static/js/main.8436f605.chunk.js",
+    "main.js.map": "/portfolio-app/static/js/main.8436f605.chunk.js.map",
     "runtime-main.js": "/portfolio-app/static/js/runtime-main.7c4b9b34.js",
     "runtime-main.js.map": "/portfolio-app/static/js/runtime-main.7c4b9b34.js.map",
     "static/css/2.52667986.chunk.css": "/portfolio-app/static/css/2.52667986.chunk.css",
-    "static/js/2.2399052b.chunk.js": "/portfolio-app/static/js/2.2399052b.chunk.js",
-    "static/js/2.2399052b.chunk.js.map": "/portfolio-app/static/js/2.2399052b.chunk.js.map",
+    "static/js/2.67702b4a.chunk.js": "/portfolio-app/static/js/2.67702b4a.chunk.js",
+    "static/js/2.67702b4a.chunk.js.map": "/portfolio-app/static/js/2.67702b4a.chunk.js.map",
     "index.html": "/portfolio-app/index.html",
-    "precache-manifest.96c46c4ebeb8c36f6e9363c37d890dd3.js": "/portfolio-app/precache-manifest.96c46c4ebeb8c36f6e9363c37d890dd3.js",
+    "precache-manifest.530f4c96c8b48005770502e86f67113c.js": "/portfolio-app/precache-manifest.530f4c96c8b48005770502e86f67113c.js",
     "service-worker.js": "/portfolio-app/service-worker.js",
     "static/css/2.52667986.chunk.css.map": "/portfolio-app/static/css/2.52667986.chunk.css.map",
-    "static/css/main.b6c042be.chunk.css.map": "/portfolio-app/static/css/main.b6c042be.chunk.css.map",
-    "static/js/2.2399052b.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.2399052b.chunk.js.LICENSE.txt",
+    "static/css/main.570c5eb1.chunk.css.map": "/portfolio-app/static/css/main.570c5eb1.chunk.css.map",
+    "static/js/2.67702b4a.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.67702b4a.chunk.js.LICENSE.txt",
     "static/media/about.jpg": "/portfolio-app/static/media/about.20fb6e26.jpg",
     "static/media/bolderer-sinatra-app_homepage.png": "/portfolio-app/static/media/bolderer-sinatra-app_homepage.ca9f24b4.png",
     "static/media/cli_project_spread.jpg": "/portfolio-app/static/media/cli_project_spread.c5ea9875.jpg",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.7c4b9b34.js",
     "static/css/2.52667986.chunk.css",
-    "static/js/2.2399052b.chunk.js",
-    "static/css/main.b6c042be.chunk.css",
-    "static/js/main.ca53d5c6.chunk.js"
+    "static/js/2.67702b4a.chunk.js",
+    "static/css/main.570c5eb1.chunk.css",
+    "static/js/main.8436f605.chunk.js"
   ]
 }
