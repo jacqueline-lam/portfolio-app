@@ -46,23 +46,53 @@ const ProjectDetails = ({ match, projects }) => {
             <Markup content={project.features} allowElements='true' />
           </div>
 
-          {project.blog_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.blog_url, "_blank")}>BLOG POST</button> : null}
-          {project.github_url ? <button className="btn btn-outline-danger btn-lg" onClick={() => window.open(project.github_url, "_blank")}>SOURCE CODE</button> : null}
-          {project.demo_vid ?
-            <div>
-              <h5>Project Demo</h5>
-              <div className='iframe-container'>
-                <iframe
-                  title="Umami Pantry Demo"
-                  src={project.demo_vid}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+          {
+            project.blog_url ? (
+              <button
+                className="btn btn-outline-danger btn-lg"
+                onClick={() => window.open(project.blog_url, "_blank")}
+              >
+                BLOG POST
+              </button>
+            ) : null
+          }
+          {
+            project.github_url ? (
+              <button
+                className="btn btn-outline-danger btn-lg"
+                onClick={() => window.open(project.github_url, "_blank")}
+              >
+                SOURCE CODE
+              </button>
+            ) : null
+          }
+          {
+            project.site_url ? (
+              <button
+                className="btn btn-outline-danger btn-lg"
+                onClick={() => window.open(project.site_url, "_blank")}
+              >
+                LIVE SITE
+              </button>
+            ) : null
+          }
+          {
+            project.demo_vid ? (
+              <div>
+                <h5>Project Demo</h5>
+                <div className='iframe-container'>
+                  <iframe
+                    title="Umami Pantry Demo"
+                    src={project.demo_vid}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
-            </div>
-            :
-            null
+            )
+              :
+              null
           }
           <hr />
 
@@ -74,7 +104,12 @@ const ProjectDetails = ({ match, projects }) => {
 
   return (
     < >
-      {project ? renderProject() : <i>This project does not exist. See all projects on Portfolio page.</i>}
+      {
+        project ?
+          renderProject()
+          :
+          <i>This project does not exist. See all projects on Portfolio page.</i>
+      }
     </>
   )
 }

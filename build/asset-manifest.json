@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.570c5eb1.chunk.css",
-    "main.js": "/portfolio-app/static/js/main.8436f605.chunk.js",
-    "main.js.map": "/portfolio-app/static/js/main.8436f605.chunk.js.map",
+    "main.js": "/portfolio-app/static/js/main.2e9e9191.chunk.js",
+    "main.js.map": "/portfolio-app/static/js/main.2e9e9191.chunk.js.map",
     "runtime-main.js": "/portfolio-app/static/js/runtime-main.7c4b9b34.js",
     "runtime-main.js.map": "/portfolio-app/static/js/runtime-main.7c4b9b34.js.map",
     "static/css/2.52667986.chunk.css": "/portfolio-app/static/css/2.52667986.chunk.css",
-    "static/js/2.67702b4a.chunk.js": "/portfolio-app/static/js/2.67702b4a.chunk.js",
-    "static/js/2.67702b4a.chunk.js.map": "/portfolio-app/static/js/2.67702b4a.chunk.js.map",
+    "static/js/2.2911912d.chunk.js": "/portfolio-app/static/js/2.2911912d.chunk.js",
+    "static/js/2.2911912d.chunk.js.map": "/portfolio-app/static/js/2.2911912d.chunk.js.map",
     "index.html": "/portfolio-app/index.html",
-    "precache-manifest.530f4c96c8b48005770502e86f67113c.js": "/portfolio-app/precache-manifest.530f4c96c8b48005770502e86f67113c.js",
+    "precache-manifest.4a55ad44646b444a40a691b801492587.js": "/portfolio-app/precache-manifest.4a55ad44646b444a40a691b801492587.js",
     "service-worker.js": "/portfolio-app/service-worker.js",
     "static/css/2.52667986.chunk.css.map": "/portfolio-app/static/css/2.52667986.chunk.css.map",
     "static/css/main.570c5eb1.chunk.css.map": "/portfolio-app/static/css/main.570c5eb1.chunk.css.map",
-    "static/js/2.67702b4a.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.67702b4a.chunk.js.LICENSE.txt",
+    "static/js/2.2911912d.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.2911912d.chunk.js.LICENSE.txt",
     "static/media/about.jpg": "/portfolio-app/static/media/about.20fb6e26.jpg",
     "static/media/bolderer-sinatra-app_homepage.png": "/portfolio-app/static/media/bolderer-sinatra-app_homepage.ca9f24b4.png",
     "static/media/cli_project_spread.jpg": "/portfolio-app/static/media/cli_project_spread.c5ea9875.jpg",
     "static/media/loading.gif": "/portfolio-app/static/media/loading.d2becfa7.gif",
+    "static/media/movie-nominations.png": "/portfolio-app/static/media/movie-nominations.3441f8b3.png",
     "static/media/personal-website-v1.png": "/portfolio-app/static/media/personal-website-v1.3bcd30bc.png",
     "static/media/portfolio.gif": "/portfolio-app/static/media/portfolio.e5acfcb1.gif",
     "static/media/rails-bolderer-app_all-jackies-sends.png": "/portfolio-app/static/media/rails-bolderer-app_all-jackies-sends.006e4be6.png",
@@ -26,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.7c4b9b34.js",
     "static/css/2.52667986.chunk.css",
-    "static/js/2.67702b4a.chunk.js",
+    "static/js/2.2911912d.chunk.js",
     "static/css/main.570c5eb1.chunk.css",
-    "static/js/main.8436f605.chunk.js"
+    "static/js/main.2e9e9191.chunk.js"
   ]
 }
