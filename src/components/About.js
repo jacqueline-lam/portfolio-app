@@ -8,7 +8,7 @@ const About = () => {
         <h2>Full-stack Software Engineer</h2>
         <div className='text-section'>
           <h6>My passion for using technologies to cultivate brands and develop strategies have led me to a path of software engineering.</h6>
-          <h6>I enjoy experimenting with code to tackle both simple and complex problems.</h6>
+          <h6>I enjoy experimenting with code to tackle both simple and complex problems.</h6><br />
           <i>The rock climber in me gives me the flexibility and adaptability to be a multi-faceted problem solver under intense pressure, and imbues a passion for consistent self-improvement.</i>
         </div>
         <div className='text-section' id='skills'>
