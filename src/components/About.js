@@ -13,9 +13,10 @@ const About = () => {
         </div>
         <div className='text-section' id='skills'>
           <h4> // Technical Skills</h4>
-          <i>&raquo; Programming Languages: Ruby, Javascript, HTML & CSS</i><br />
-          <i>&raquo; Frameworks: Rails, Sinatra, React, Redux</i><br />
-          <i>&raquo; Databases: PostgreSQL, SQL</i>
+          <i>&raquo; Programming Languages: Javascript, Ruby, HTML & CSS</i><br />
+          <i>&raquo; Frameworks + Libraries: Rails, Sinatra, React, Redux, Bootstrap, Material UI</i><br />
+          <i>&raquo; Databases: PostgreSQL, SQL</i><br />
+          <i>&raquo; Misc.: GitHub Pages, Heroku, REST-API, Object Oriented Programming, Model-View-Controller (MVC)</i><br />
         </div>
       </div>
     </div>
