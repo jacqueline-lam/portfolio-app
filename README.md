@@ -104,3 +104,4 @@ Everyone interacting in the project’s codebases is expected to follow the [cod
 ## Attributions
 * Ellipsis/ Spinner loading gif is provided by loading.io
 * Homepage SCSS Animation by Lindsay Grizzard (source: freefrontend.com)
+* Icons provided by https://icons8.com/
