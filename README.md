@@ -1,9 +1,10 @@
-# Personal Portfolio
+# Personal Portfolio 1.0 / React + Redux Version
 ## Overview
 This is a personal portfolio that showcases Jacqueline Lam's projects, software engineering journey, blog posts and more.
 
 The app is composed of backend rails API and front-end React Redux clients, which use asynchronous Javascript (with the help of redux-thunk middleware) to make HTTP requests to the API and render them to the user interface.
 
+Links: Portfolio Version 2 - [GitHub](https://github.com/jacqueline-lam/portfolio-app-2.0) | [Live Website](https://github.com/jacqueline-lam/portfolio-app-2.0)
 ![portfolio demo](./public/portfolio-quick-demo.gif)
 
 * Back End Repo: [Portfolio API](https://github.com/jacqueline-lam/portfolio-api)
